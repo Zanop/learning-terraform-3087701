@@ -32,7 +32,7 @@ resource "aws_instance" "blog" {
 resource "aws_security_group" "blog" {
   name        = "blog"
   description = "http/https in, all out"
-  vps_id      = data.aws_vpc.default.id
+  vpc_id      = data.aws_vpc.default.id
 }
 
 resource "aws_security_group_rule" "blog_http_in" {
