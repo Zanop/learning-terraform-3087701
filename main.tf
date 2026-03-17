@@ -98,5 +98,3 @@ module "blog_autoscaling" {
     }
   }
 }
-
-
