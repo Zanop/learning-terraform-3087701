@@ -61,6 +61,8 @@ module "blog_alb" {
       protocol = "HTTP"
       forward = {
         target_group_arn = aws_lb_target_group.blog.arn
+      }
+    }
   }
 
   tags = {
